@@ -1,13 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Blue Ocean Corporation — One Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<nav id="navbar" class="navbar at-top">
+  <div class="inner">
+    <div class="brand"><i class="fa-solid fa-water"></i> Blue Ocean Corp</div>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#solutions">Solutions</a></li>
+      <li><a href="#carousel">Stories</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="progressBar" id="progress"></div>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="wrap heroInner">
+    <div data-animate="fade-up">
+      <h1 style="margin-top:0">Future-ready training for supply chain leaders</h1>
+      <p class="muted">Blue Ocean Corporation helps professionals upskill in logistics, procurement, and business management through practical programs and global certifications.</p>
+      <a class="cta" href="#contact"><i class="fa-solid fa-circle-play"></i> Enroll Today</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>Why Blue Ocean?</h2>
+    <div class="columns" data-animate="fade-up">
+      <p><i class="fa-solid fa-graduation-cap"></i> 25+ years enabling careers across the GCC and beyond.</p>
+      <p><i class="fa-solid fa-globe"></i> Regional presence + global reach.</p>
+      <p><i class="fa-solid fa-certificate"></i> Industry-recognized certifications.</p>
+      <p><i class="fa-solid fa-people-group"></i> Alumni & mentor support.</p>
+      <p><i class="fa-solid fa-diagram-project"></i> Real-world capstones.</p>
+      <p><i class="fa-solid fa-rocket"></i> Career services and employer connects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="solutions" class="parallax">
+  <div class="wrap">
+    <h2>Solutions for Teams & Individuals</h2>
+    <p data-animate="fade-up">Pick a track or bring us in-house for custom programs.</p>
+  </div>
+</section>
+
+<section id="carousel">
+  <div class="wrap">
+    <h2>Learner Stories</h2>
+    <div class="carousel">
+      <div class="slides" id="slides">
+        <article class="slide"><h3>“Promotion secured in 90 days.”</h3><p class="muted">Procurement track boosted my confidence. — Aisha, Dubai</p></article>
+        <article class="slide"><h3>“Real projects, real impact.”</h3><p class="muted">Warehouse lab → 18% pick-time reduction. — Nikhil, Muscat</p></article>
+        <article class="slide"><h3>“Flexible and practical.”</h3><p class="muted">Weekend classes + great mentors. — Mariam, Riyadh</p></article>
+      </div>
+      <button class="navBtn prev" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="navBtn next" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<section id="media" class="video">
+  <div class="wrap">
+    <h2>Inside the Classroom</h2>
+    <video controls poster="./assets/image.png">
+      <source src="./assets/video.mp4" type="video/mp4">
+      your browser is old
+    </video>
+    <p style="margin-top:20px"><button id="openModal" class="cta"><i class="fa-solid fa-circle-info"></i> See curriculum outline</button></p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p data-animate="fade-up">We’ll help you pick the right track.</p>
+    <p><a class="cta" href="#home"><i class="fa-solid fa-arrow-up"></i> Back to Top</a></p>
+  </div>
+</section>
+
+<div class="modal-backdrop" id="backdrop">
+  <div class="modal">
+    <h3 style="margin-top:0">Sample Curriculum (Logistics)</h3>
+    <ul>
+      <li>W1–2: Fundamentals & KPIs</li>
+      <li>W3–4: Inventory & Warehouse</li>
+      <li>W5–6: Transport & Routing</li>
+      <li>W7: Procurement & Negotiation</li>
+      <li>W8: Capstone & Review</li>
+    </ul>
+    <p><button id="closeModal" class="cta"><i class="fa-solid fa-xmark"></i> Close</button></p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap footerFlex">
+    <div>© <span id="year"></span> Blue Ocean Corporation</div>
+    <div class="social">
+      <a href="https://x.com/blueoceantrg?lang=en"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/school/blue-ocean-management-training/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/c/BlueOceanAcademy-corporate-training/"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.facebook.com/BlueOceanAcademy/"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/main.js" defer></script>
+</body>
 </html>
